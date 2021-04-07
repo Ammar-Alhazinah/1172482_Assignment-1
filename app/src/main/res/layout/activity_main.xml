@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blueZircon"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".MainActivity">
@@ -17,7 +17,9 @@
         android:layout_weight="0"
         android:gravity="center"
         android:text="@string/user_registration"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        style="@style/style1" />
 
     <Space
         android:layout_width="match_parent"
@@ -25,18 +27,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp" >
+        android:layout_height="50dp">
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginEnd="100dp"
-            android:layout_marginRight="100dp"
-            android:layout_weight="0"
             android:text="@string/NameTxt"
-            android:textSize="18sp" />
+            style="@style/style2" />
 
         <EditText
             android:id="@+id/fNameEdtTxt"
@@ -45,6 +41,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="First Name"
+            android:textColorHint="@color/babyBlue"
             android:inputType="textPersonName"
             android:textSize="14sp" />
     </LinearLayout>
@@ -62,6 +59,7 @@
             android:layout_marginEnd="103dp"
             android:layout_marginRight="103dp"
             android:layout_weight="0"
+            style="@style/style2"
             android:text="@string/LastNameTxt"
             android:textSize="18sp" />
 
@@ -72,6 +70,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Last Name"
+            android:textColorHint="@color/babyBlue"
             android:inputType="textPersonName"
             android:textSize="14sp" />
 
@@ -89,6 +88,7 @@
             android:layout_marginEnd="100dp"
             android:layout_marginRight="100dp"
             android:layout_weight="0"
+            style="@style/style2"
             android:text="@string/EmailTxt"
             android:textSize="18sp" />
 
@@ -99,6 +99,7 @@
             android:layout_weight="0"
             android:ems="10"
             android:hint="name@example.com"
+            android:textColorHint="@color/babyBlue"
             android:inputType="textEmailAddress"
             android:textSize="14sp" />
 
@@ -115,7 +116,9 @@
             android:layout_marginEnd="100dp"
             android:layout_marginRight="100dp"
             android:layout_weight="0"
+            style="@style/style2"
             android:text="Password"
+            android:textColorHint="@color/babyBlue"
             android:textSize="18sp" />
 
         <EditText
@@ -125,6 +128,7 @@
             android:layout_weight="0"
             android:ems="10"
             android:hint="Password"
+            android:textColorHint="@color/babyBlue"
             android:inputType="textPassword"
             android:textSize="14sp" />
 
@@ -143,6 +147,7 @@
             android:layout_marginEnd="40dp"
             android:layout_marginRight="40dp"
             android:layout_weight="0"
+            style="@style/style2"
             android:text="Confirm Password"
             android:textSize="18sp" />
 
@@ -153,6 +158,7 @@
             android:layout_weight="0"
             android:ems="10"
             android:hint="Confirm Password"
+            android:textColorHint="@color/babyBlue"
             android:inputType="textPassword"
             android:textSize="14sp" />
     </LinearLayout>
@@ -169,6 +175,7 @@
             android:layout_gravity="center"
             android:layout_marginEnd="100dp"
             android:layout_marginRight="100dp"
+            style="@style/style2"
             android:layout_weight="0"
             android:text="Phone"
             android:textSize="18sp" />
@@ -180,6 +187,7 @@
             android:layout_weight="0"
             android:ems="10"
             android:hint="0591231234"
+            android:textColorHint="@color/babyBlue"
             android:inputType="number" />
     </LinearLayout>
 
@@ -194,6 +202,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginEnd="100dp"
+            style="@style/style2"
             android:layout_marginRight="100dp"
             android:layout_weight="0"
             android:text="Gender"
@@ -235,6 +244,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginEnd="50dp"
+            style="@style/style2"
             android:layout_marginRight="50dp"
             android:layout_weight="0"
             android:text="Birth Of Date"
@@ -247,6 +257,7 @@
             android:layout_weight="0"
             android:ems="10"
             android:hint="dd/mm/yyyy"
+            android:textColorHint="@color/babyBlue"
             android:inputType="date"
             android:textSize="14sp" />
     </LinearLayout>
@@ -263,6 +274,7 @@
             android:layout_gravity="center"
             android:layout_marginEnd="100dp"
             android:layout_marginRight="100dp"
+            style="@style/style2"
             android:layout_weight="0"
             android:text="City"
             android:textSize="18sp" />
