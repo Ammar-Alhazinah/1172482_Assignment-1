@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment_1</string>
+    <string name="user_registration">USER REGISTRATION</string>
+    <string name="NameTxt">First Name</string>
+    <string name="LastNameTxt">Last Name</string>
+    <string name="EmailTxt">Email</string>
+    <string name="PassTxt">Password</string>
+    <string name="passTxt">Password</string>
+    <string name="btnSave">Save</string>
+</resources>
